@@ -5,14 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AKAGO DOSSOU Audrey | INFORMATICIEN</title>
 
+<!-- Bootstrap 5 -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- Animate.css pour animations -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
 <style>
 body{
     font-family:'Inter', sans-serif;
     background:#0f172a;
     color:#e2e8f0;
+    scroll-behavior: smooth;
 }
 
 .navbar{
@@ -23,21 +33,31 @@ body{
 .navbar a{
     color:#e2e8f0 !important;
     font-weight:500;
+    transition: 0.3s;
+}
+.navbar a:hover{
+    color:#38bdf8 !important;
 }
 
 .hero{
-    padding:160px 0 120px;
+    padding:180px 0 120px;
 }
-
 .hero h1{
-    font-size:42px;
+    font-size:48px;
     font-weight:700;
+    animation: fadeInDown 1s;
 }
-
 .hero h3{
     font-weight:400;
     color:#94a3b8;
     margin-top:10px;
+    animation: fadeInUp 1s;
+}
+.hero p{
+    margin-top:20px;
+    font-size:18px;
+    line-height:1.6;
+    animation: fadeIn 1.5s;
 }
 
 .hero img{
@@ -45,17 +65,19 @@ body{
     height:220px;
     object-fit:cover;
     border-radius:12px;
-    box-shadow:0 15px 40px rgba(0,0,0,0.4);
+    box-shadow:0 15px 40px rgba(0,0,0,0.6);
+    animation: zoomIn 1.2s;
 }
 
 .section{
     padding:100px 0;
 }
-
 .section-title{
     font-weight:700;
     margin-bottom:40px;
-    font-size:28px;
+    font-size:32px;
+    color:#38bdf8;
+    text-align:center;
 }
 
 .card-custom{
@@ -65,14 +87,16 @@ body{
     margin-bottom:25px;
     transition:0.3s;
 }
-
 .card-custom:hover{
-    transform:translateY(-5px);
+    transform:translateY(-10px);
+    box-shadow:0 15px 40px rgba(0,0,0,0.6);
 }
 
 .progress{
-    height:6px;
+    height:8px;
     background:#334155;
+    border-radius:5px;
+    margin-bottom:20px;
 }
 
 .progress-bar{
@@ -86,97 +110,106 @@ body{
     font-size:14px;
     color:#94a3b8;
 }
+
+/* Scroll animation using AOS */
+[data-aos] {
+    opacity: 0;
+    transition-property: transform, opacity;
+    transition-duration: 1s;
+}
+
 </style>
 </head>
 
 <body>
 
-<nav class="navbar navbar-expand-lg fixed-top">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top py-3">
 <div class="container">
-<a class="navbar-brand fw-bold" href="#">AKAGO DOSSOU Audrey</a>
-<div class="ms-auto">
-<a href="#about" class="me-3">Profil</a>
-<a href="#skills" class="me-3">Compétences</a>
-<a href="#experience" class="me-3">Expérience</a>
-<a href="#projects" class="me-3">Projets</a>
-<a href="#contact">Contact</a>
+<a class="navbar-brand fw-bold fs-4" href="#">AKAGO DOSSOU Audrey</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <span class="navbar-toggler-icon"><i class="bi bi-list text-light fs-2"></i></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+    <div class="ms-auto navbar-nav">
+        <a href="#about" class="nav-link me-3">Profil</a>
+        <a href="#skills" class="nav-link me-3">Compétences</a>
+        <a href="#experience" class="nav-link me-3">Expérience</a>
+        <a href="#projects" class="nav-link me-3">Projets</a>
+        <a href="#contact" class="nav-link">Contact</a>
+    </div>
 </div>
 </div>
 </nav>
 
+<!-- Hero -->
 <section class="hero">
 <div class="container">
 <div class="row align-items-center">
 
-<div class="col-md-7">
-<h1>AKAGO DOSSOU Audrey</h1>
-<h3>INFORMATICIEN | Développement Web & Solutions Numériques</h3>
-
-<p class="mt-4">
+<div class="col-md-7 text-md-start text-center">
+<h1 class="animate__animated animate__fadeInDown">AKAGO DOSSOU Audrey</h1>
+<h3 class="animate__animated animate__fadeInUp">INFORMATICIEN | Développement Web & Solutions Numériques</h3>
+<p class="mt-4 animate__animated animate__fadeIn">
 Je conçois des solutions web robustes, évolutives et orientées performance.
 Mon approche combine rigueur technique, architecture structurée et expérience utilisateur maîtrisée.
 </p>
-
+<a href="#contact" class="btn btn-outline-info btn-lg mt-3 animate__animated animate__fadeInUp">Me Contacter</a>
 </div>
 
 <div class="col-md-5 text-center">
-<img src="audrey.jpeg" alt="AKAGO DOSSOU Audrey">
+<img src="audrey.jpeg" alt="AKAGO DOSSOU Audrey" class="animate__animated animate__zoomIn">
 </div>
 
 </div>
 </div>
 </section>
 
+<!-- About -->
 <section id="about" class="section">
 <div class="container">
 <h2 class="section-title">Profil Professionnel</h2>
-
-<p>
+<p class="text-center mx-auto" style="max-width:800px;">
 Dev Informatique spécialisée dans la conception et le développement
 d’applications web modernes. Je maîtrise l’architecture front-end et back-end,
 la gestion des bases de données et l’optimisation des performances.
 </p>
-
-<p>
-Mon objectif est de contribuer activement a des projets innovants 
+<p class="text-center mx-auto" style="max-width:800px;">
+Mon objectif est de contribuer activement à des projets innovants 
 tout en continuant à développer mes connaissances dans ce 
-domaine en constante evolution..
+domaine en constante évolution.
 </p>
-
 </div>
 </section>
 
-<section id="skills" class="section">
+<!-- Skills -->
+<section id="skills" class="section bg-dark">
 <div class="container">
-<h2 class="section-title">Compétences Techniques</h2>
+<h2 class="section-title text-light">Compétences Techniques</h2>
 
+<div class="row">
+<div class="col-md-6">
 <p>HTML / CSS</p>
-<div class="progress mb-4">
-<div class="progress-bar" style="width:90%"></div>
-</div>
-
+<div class="progress mb-4"><div class="progress-bar" style="width:90%"></div></div>
 <p>JavaScript</p>
-<div class="progress mb-4">
-<div class="progress-bar" style="width:80%"></div>
+<div class="progress mb-4"><div class="progress-bar" style="width:80%"></div></div>
 </div>
-
+<div class="col-md-6">
 <p>PHP / MySQL</p>
-<div class="progress mb-4">
-<div class="progress-bar" style="width:85%"></div>
-</div>
-
+<div class="progress mb-4"><div class="progress-bar" style="width:85%"></div></div>
 <p>Architecture Web & Responsive Design</p>
-<div class="progress mb-4">
-<div class="progress-bar" style="width:88%"></div>
+<div class="progress mb-4"><div class="progress-bar" style="width:88%"></div></div>
 </div>
-
+</div>
 </div>
 </section>
 
+<!-- Experience -->
 <section id="experience" class="section">
 <div class="container">
 <h2 class="section-title">Expérience Professionnelle</h2>
-
+<div class="row">
+<div class="col-md-6" data-aos="fade-up">
 <div class="card-custom">
 <h5>Stagiaire en Informatique</h5>
 <p>
@@ -185,7 +218,8 @@ Support technique aux utilisateurs et participation au développement
 d’outils numériques internes.
 </p>
 </div>
-
+</div>
+<div class="col-md-6" data-aos="fade-up" data-aos-delay="150">
 <div class="card-custom">
 <h5>Gestionnaire Salle Numérique</h5>
 <p>
@@ -193,14 +227,17 @@ Supervision des équipements informatiques, gestion des ressources numériques
 et accompagnement technique des utilisateurs.
 </p>
 </div>
-
+</div>
+</div>
 </div>
 </section>
 
-<section id="projects" class="section">
+<!-- Projects -->
+<section id="projects" class="section bg-dark">
 <div class="container">
-<h2 class="section-title">Réalisations</h2>
-
+<h2 class="section-title text-light">Réalisations</h2>
+<div class="row">
+<div class="col-md-6" data-aos="fade-right">
 <div class="card-custom">
 <h5>Système de Gestion Numérique</h5>
 <p>
@@ -208,7 +245,8 @@ Développement d’une plateforme de gestion des utilisateurs et des ressources
 informatiques avec optimisation des données.
 </p>
 </div>
-
+</div>
+<div class="col-md-6" data-aos="fade-left">
 <div class="card-custom">
 <h5>Application Web Dynamique</h5>
 <p>
@@ -216,23 +254,40 @@ Conception d’une application web responsive intégrant des fonctionnalités
 interactives et une architecture structurée.
 </p>
 </div>
-
+</div>
+</div>
 </div>
 </section>
 
+<!-- Contact -->
 <section id="contact" class="section">
 <div class="container">
 <h2 class="section-title">Contact</h2>
-
-<p>Email : akagodossouaudrey@gmail.com</p>
-<p>Téléphone : +229 01 62 61 63 86</p>
-
+<div class="row justify-content-center">
+<div class="col-md-6 text-center">
+<p><i class="bi bi-envelope-fill me-2"></i>Email : akagodossouaudrey@gmail.com</p>
+<p><i class="bi bi-telephone-fill me-2"></i>Téléphone : +229 01 62 61 63 86</p>
+<a href="mailto:akagodossouaudrey@gmail.com" class="btn btn-info mt-3">Envoyer un Email</a>
+</div>
+</div>
 </div>
 </section>
 
+<!-- Footer -->
 <div class="footer">
 © 2026 AKAGO DOSSOU Audrey — Tous droits réservés
 </div>
+
+<!-- Bootstrap JS + Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- AOS Animation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+AOS.init({
+    duration: 1200,
+});
+</script>
 
 </body>
 </html>
