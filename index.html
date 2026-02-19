@@ -26,25 +26,7 @@ body{
 }
 
 .navbar{
-    background:##0d1b2a;
-}
-/* NAVBAR */
-.navbar {
-    background: #0d1b2a;
-}
-
-.navbar .nav-link {
-    color: #f77f00; /* orange pour bien ressortir */
-    font-weight: 500;
-}
-
-.navbar .nav-link:hover {
-    color: #ff9e00; /* un orange plus clair au survol */
-}
-
-.navbar .navbar-brand {
-    color: #f77f00;
-    font-weight: bold;
+    background:#0d1b2a;
 }
 
 .hero{
@@ -89,10 +71,10 @@ body{
 }
 
 .card{
-    background: linear-gradient(135deg, #1b263b, #0d1b2a);
+    background: linear-gradient(135deg, lab(100% 0.01 -0.01), #e7e5e5);
     border:none;
     transition:0.3s;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.5);
     border-radius: 15px;
 }
 
@@ -117,7 +99,7 @@ form input, form textarea{
 }
 
 form input::placeholder, form textarea::placeholder{
-    color:#aaa;
+    color:#ffffff;
 }
 
 form button{
@@ -151,7 +133,7 @@ form button{
 <section class="hero">
 <div data-aos="fade-up">
 <h1 class="display-4 fw-bold">AKAGO DOSSOU Audrey</h1>
-<h4 class="highlight">INFORMATICIEN | Développeuse Web</h4>
+<h4 class="highlight">INFORMATICIE | Développeuse Web</h4>
 
 <h5 class="mt-3">
 Spécialiste en <span id="typed"></span>
@@ -341,5 +323,3 @@ var typed = new Typed('#typed', {
 
 </body>
 </html>
-
-
