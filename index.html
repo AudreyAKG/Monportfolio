@@ -5,16 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AKAGO DOSSOU Audrey | Portfolio</title>
 
-<!-- Bootstrap -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- AOS Animation -->
 <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
-<!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<!-- Typed.js -->
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
 <style>
@@ -24,11 +17,7 @@ body{
     color:white;
     scroll-behavior:smooth;
 }
-
-.navbar{
-    background:#0d1b2a;
-}
-
+.navbar{ background:#0d1b2a; }
 .hero{
     height:100vh;
     display:flex;
@@ -37,7 +26,6 @@ body{
     text-align:center;
     flex-direction: column;
 }
-
 .hero img{
     border:6px solid #f77f00;
     border-radius:50%;
@@ -47,64 +35,38 @@ body{
     box-shadow:0 10px 30px rgba(0,0,0,0.6);
     transition:0.4s ease;
 }
-
-.hero img:hover{
-    transform:scale(1.05);
-}
-
-.highlight{
-    color:#f77f00;
-}
-
+.hero img:hover{ transform:scale(1.05); }
+.highlight{ color:#f77f00; }
 .btn-custom{
     background:#f77f00;
     color:white;
     border:none;
 }
-
-.btn-custom:hover{
-    background:#ff9e00;
-}
-
-.section{
-    padding:100px 0;
-}
-
+.btn-custom:hover{ background:#ff9e00; }
+.section{ padding:100px 0; }
 .card{
     background: linear-gradient(135deg, lab(100% 0.01 -0.01), #e7e5e5);
     border:none;
     transition:0.3s;
-    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.5);
-    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(255,255,255,0.5);
+    border-radius:15px;
 }
-
-.card:hover{
-    transform:translateY(-10px);
-}
-
-.progress{
-    height:8px;
-}
-
+.card:hover{ transform:translateY(-10px); }
+.progress{ height:8px; }
 .footer{
     background:#1b263b;
     padding:20px;
     text-align:center;
 }
-
 form input, form textarea{
     background:#1b263b;
     color:white;
     border:none;
 }
-
 form input::placeholder, form textarea::placeholder{
     color:#ffffff;
 }
-
-form button{
-    width:100%;
-}
+form button{ width:100%; }
 </style>
 </head>
 
@@ -120,6 +82,7 @@ form button{
 <div class="collapse navbar-collapse" id="nav">
 <ul class="navbar-nav ms-auto">
 <li class="nav-item"><a class="nav-link" href="#about">Profil</a></li>
+<li class="nav-item"><a class="nav-link" href="#education">Formation</a></li>
 <li class="nav-item"><a class="nav-link" href="#skills">Compétences</a></li>
 <li class="nav-item"><a class="nav-link" href="#experience">Expérience</a></li>
 <li class="nav-item"><a class="nav-link" href="#projects">Projets</a></li>
@@ -133,42 +96,40 @@ form button{
 <section class="hero">
 <div data-aos="fade-up">
 <h1 class="display-4 fw-bold">AKAGO DOSSOU Audrey</h1>
-<h4 class="highlight">INFORMATICIE | Développeuse Web</h4>
-
-<h5 class="mt-3">
-Spécialiste en <span id="typed"></span>
-</h5>
-
+<h4 class="highlight">INFORMATICIEN | Développeur Web</h4>
+<h5 class="mt-3">Spécialiste en <span id="typed"></span></h5>
 <img src="audrey.jpeg" alt="AKAGO DOSSOU Audrey" class="mt-4">
-
 <div class="mt-4">
 <a href="#projects" class="btn btn-custom me-2">Voir mes projets</a>
 <a href="#contact" class="btn btn-outline-light">Me contacter</a>
 </div>
-
 </div>
 </section>
 
 <!-- ABOUT -->
 <section id="about" class="section bg-dark">
-<div class="container text-center" data-aos="fade-right">
+<div class="container text-center">
 <h2 class="highlight mb-4">Profil Professionnel</h2>
+<p>Ingénieure en informatique passionnée par les technologies web et les systèmes numériques...</p>
+<p>Rigoureuse, analytique et orientée résultats...</p>
+<p>Capable de travailler en équipe comme en autonomie, avec un excellent sens de l’organisation et de la communication.</p>
+</div>
+</section>
 
-<p>
-Ingénieure en informatique passionnée par les technologies web et les systèmes numériques, 
-je conçois et développe des solutions digitales modernes, performantes et évolutives.
-</p>
+<!-- FORMATION -->
+<section id="education" class="section">
+<div class="container">
+<h2 class="text-center highlight mb-5">Formation Académique</h2>
 
-<p>
-Dotée d’une solide maîtrise en développement front-end et back-end, 
-je mets en œuvre des architectures web structurées, des bases de données optimisées 
-et des interfaces utilisateur intuitives.
-</p>
+<div class="card p-4 mb-4">
+<h5>Licence en Informatique</h5>
+<p>Développement web, bases de données, réseaux et systèmes informatiques.</p>
+</div>
 
-<p>
-Rigoureuse, analytique et orientée résultats, je m’investis dans chaque projet 
-avec une vision stratégique et une exigence de qualité professionnelle.
-</p>
+<div class="card p-4">
+<h5>Baccalauréat Scientifique</h5>
+<p>Série Scientifique – Option Mathématiques.</p>
+</div>
 
 </div>
 </section>
@@ -179,33 +140,13 @@ avec une vision stratégique et une exigence de qualité professionnelle.
 <h2 class="text-center highlight mb-5">Compétences Techniques</h2>
 <div class="row">
 
-<div class="col-md-6 mb-4">
-<p>HTML / CSS</p>
-<div class="progress">
-<div class="progress-bar bg-warning" style="width:90%"></div>
-</div>
-</div>
-
-<div class="col-md-6 mb-4">
-<p>JavaScript</p>
-<div class="progress">
-<div class="progress-bar bg-warning" style="width:75%"></div>
-</div>
-</div>
-
-<div class="col-md-6 mb-4">
-<p>PHP / MySQL</p>
-<div class="progress">
-<div class="progress-bar bg-warning" style="width:80%"></div>
-</div>
-</div>
-
-<div class="col-md-6 mb-4">
-<p>Bootstrap</p>
-<div class="progress">
-<div class="progress-bar bg-warning" style="width:85%"></div>
-</div>
-</div>
+<div class="col-md-6 mb-4"><p>HTML / CSS</p><div class="progress"><div class="progress-bar bg-warning" style="width:90%"></div></div></div>
+<div class="col-md-6 mb-4"><p>JavaScript</p><div class="progress"><div class="progress-bar bg-warning" style="width:75%"></div></div></div>
+<div class="col-md-6 mb-4"><p>PHP / MySQL</p><div class="progress"><div class="progress-bar bg-warning" style="width:80%"></div></div></div>
+<div class="col-md-6 mb-4"><p>Bootstrap</p><div class="progress"><div class="progress-bar bg-warning" style="width:85%"></div></div></div>
+<div class="col-md-6 mb-4"><p>Microsoft Office</p><div class="progress"><div class="progress-bar bg-warning" style="width:85%"></div></div></div>
+<div class="col-md-6 mb-4"><p>Maintenance Informatique</p><div class="progress"><div class="progress-bar bg-warning" style="width:80%"></div></div></div>
+<div class="col-md-6 mb-4"><p>Réseaux Informatiques</p><div class="progress"><div class="progress-bar bg-warning" style="width:70%"></div></div></div>
 
 </div>
 </div>
@@ -218,70 +159,49 @@ avec une vision stratégique et une exigence de qualité professionnelle.
 
 <div class="card p-4 mb-4">
 <h5>Stagiaire en Informatique</h5>
-<p>
-Installation et maintenance de systèmes informatiques.
-Support technique aux utilisateurs.
-Participation au développement d’outils numériques internes.
-</p>
+<p>Installation, maintenance, support technique et développement d’outils internes.</p>
 </div>
 
 <div class="card p-4">
 <h5>Gestionnaire Salle Numérique</h5>
-<p>
-Supervision des équipements informatiques.
-Organisation des ressources numériques.
-Assistance et accompagnement des utilisateurs.
-</p>
+<p>Supervision des équipements, organisation des ressources et assistance utilisateurs.</p>
 </div>
 
 </div>
 </section>
 
-<!-- PROJECTS -->
-<section id="projects" class="section">
+<!-- COMPÉTENCES PERSONNELLES -->
+<section class="section">
 <div class="container">
-<h2 class="text-center highlight mb-5">Réalisations Techniques</h2>
-<div class="row">
+<h2 class="text-center highlight mb-5">Compétences Personnelles</h2>
+<div class="row text-center">
+<div class="col-md-4"><p>✔ Esprit d’analyse</p></div>
+<div class="col-md-4"><p>✔ Rigueur professionnelle</p></div>
+<div class="col-md-4"><p>✔ Travail en équipe</p></div>
+<div class="col-md-4"><p>✔ Sens de l’organisation</p></div>
+<div class="col-md-4"><p>✔ Communication efficace</p></div>
+<div class="col-md-4"><p>✔ Autonomie</p></div>
+</div>
+</div>
+</section>
 
-<div class="col-md-4 mb-4">
-<div class="card p-4">
-<h5>Système de Gestion Numérique</h5>
-<p>
-Plateforme de gestion des utilisateurs et équipements informatiques.
-Optimisation des performances et structuration des données.
-</p>
-<p><strong>Technologies :</strong> HTML, CSS, JavaScript, MySQL</p>
-</div>
-</div>
-
-<div class="col-md-4 mb-4">
-<div class="card p-4">
-<h5>Application Web Dynamique</h5>
-<p>
-Application web responsive avec interface moderne et animations interactives.
-</p>
-<p><strong>Technologies :</strong> HTML, CSS, Bootstrap, JavaScript</p>
-</div>
-</div>
-
-<div class="col-md-4 mb-4">
-<div class="card p-4">
-<h5>Projet Digital Événementiel</h5>
-<p>
-Conception de supports numériques et gestion digitale d’événements.
-</p>
-<p><strong>Compétences :</strong> Organisation, communication digitale</p>
-</div>
-</div>
-
-</div>
+<!-- LANGUES -->
+<section class="section bg-dark text-center">
+<div class="container">
+<h2 class="highlight mb-4">Langues</h2>
+<p>Français : Courant</p>
+<p>Anglais : Intermédiaire</p>
 </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section bg-dark text-center">
+<section id="contact" class="section text-center">
 <div class="container">
 <h2 class="highlight mb-4">Contact</h2>
+
+<p>Email : akagodossouaudrey@gmail.com</p>
+<p>Téléphone : +229 01 62 61 63 86</p>
+<p>Localisation : Abomey-Calavi, Bénin</p>
 
 <form action="https://formspree.io/f/mlezprno" method="POST" class="mx-auto" style="max-width:500px;">
 <input type="text" name="name" class="form-control mb-3" placeholder="Votre nom" required>
@@ -299,15 +219,8 @@ Conception de supports numériques et gestion digitale d’événements.
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
 <script>
-AOS.init({
-duration:1000,
-once:true
-});
-</script>
-
-<script>
+AOS.init({duration:1000,once:true});
 var typed = new Typed('#typed', {
   strings: [
     "Développement Front-End",
