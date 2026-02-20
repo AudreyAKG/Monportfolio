@@ -17,7 +17,15 @@ body{
     color:white;
     scroll-behavior:smooth;
 }
-.navbar{ background:#0d1b2a; }
+
+section{
+    scroll-margin-top:120px;
+}
+
+.navbar{
+    background:#0d1b2a;
+}
+
 .hero{
     height:100vh;
     display:flex;
@@ -26,6 +34,7 @@ body{
     text-align:center;
     flex-direction: column;
 }
+
 .hero img{
     border:6px solid #f77f00;
     border-radius:50%;
@@ -35,38 +44,65 @@ body{
     box-shadow:0 10px 30px rgba(0,0,0,0.6);
     transition:0.4s ease;
 }
-.hero img:hover{ transform:scale(1.05); }
-.highlight{ color:#f77f00; }
+
+.hero img:hover{
+    transform:scale(1.05);
+}
+
+.highlight{
+    color:#f77f00;
+}
+
 .btn-custom{
     background:#f77f00;
     color:white;
     border:none;
 }
-.btn-custom:hover{ background:#ff9e00; }
-.section{ padding:100px 0; }
+
+.btn-custom:hover{
+    background:#ff9e00;
+}
+
+.section{
+    padding:100px 0;
+}
+
 .card{
-    background: linear-gradient(135deg, lab(100% 0.01 -0.01), #e7e5e5);
+    background: linear-gradient(135deg, #ffffff, #f1f1f1);
+    color:#000;
     border:none;
     transition:0.3s;
-    box-shadow: 0 8px 20px rgba(255,255,255,0.5);
-    border-radius:15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    border-radius: 15px;
 }
-.card:hover{ transform:translateY(-10px); }
-.progress{ height:8px; }
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.progress{
+    height:8px;
+}
+
 .footer{
     background:#1b263b;
     padding:20px;
     text-align:center;
 }
+
 form input, form textarea{
     background:#1b263b;
     color:white;
     border:none;
 }
+
 form input::placeholder, form textarea::placeholder{
     color:#ffffff;
 }
-form button{ width:100%; }
+
+form button{
+    width:100%;
+}
 </style>
 </head>
 
@@ -94,7 +130,7 @@ form button{ width:100%; }
 
 <!-- HERO -->
 <section class="hero">
-<div data-aos="fade-up">
+<div>
 <h1 class="display-4 fw-bold">AKAGO DOSSOU Audrey</h1>
 <h4 class="highlight">INFORMATICIEN | Développeur Web</h4>
 <h5 class="mt-3">Spécialiste en <span id="typed"></span></h5>
@@ -110,9 +146,9 @@ form button{ width:100%; }
 <section id="about" class="section bg-dark">
 <div class="container text-center">
 <h2 class="highlight mb-4">Profil Professionnel</h2>
-<p>Ingénieure en informatique passionnée par les technologies web et les systèmes numériques...</p>
-<p>Rigoureuse, analytique et orientée résultats...</p>
-<p>Capable de travailler en équipe comme en autonomie, avec un excellent sens de l’organisation et de la communication.</p>
+<p>Informaticien passionné par les technologies web et les systèmes numériques.</p>
+<p>Maîtrise du développement front-end et back-end, bases de données et architectures web.</p>
+<p>Organisée, rigoureuse et orientée résultats.</p>
 </div>
 </section>
 
@@ -158,58 +194,68 @@ form button{ width:100%; }
 <h2 class="text-center highlight mb-5">Expérience Professionnelle</h2>
 
 <div class="card p-4 mb-4">
-<h5>Stagiaire en Informatique</h5>
-<p>Installation, maintenance, support technique et développement d’outils internes.</p>
+<h5>Formation : Techniques de Vente en Période de Crise</h5>
+<p><strong>GG CONSULTING – Mai 2025</strong></p>
+<p>Stratégies de vente adaptées, relation client, négociation.</p>
+</div>
+
+<div class="card p-4 mb-4">
+<h5>Stagiaire Professionnel – REGO MAINTENANCE</h5>
+<p><strong>Mars à Août 2025</strong></p>
+<p>Installation caméras, alarmes, routeurs, diagnostic et maintenance.</p>
+</div>
+
+<div class="card p-4 mb-4">
+<h5>Formateur – CONAB</h5>
+<p><strong>Octobre 2024</strong></p>
+<p>Formation Windows, Word, Excel, PowerPoint et initiation Photoshop.</p>
+</div>
+
+<div class="card p-4 mb-4">
+<h5>Formation – Marketing Digital & Rédaction Web</h5>
+<p><strong>Mai à Juillet 2024</strong></p>
+<p>SEO, gestion réseaux sociaux, email marketing, rédaction optimisée.</p>
+</div>
+
+<div class="card p-4 mb-4">
+<h5>Stage Professionnel – SICMA & ASSOCIÉS</h5>
+<p><strong>Juin 2023</strong></p>
+<p>Développement web, plateforme gestion, chat étudiants/professeurs.</p>
 </div>
 
 <div class="card p-4">
-<h5>Gestionnaire Salle Numérique</h5>
-<p>Supervision des équipements, organisation des ressources et assistance utilisateurs.</p>
+<h5>Formation – LIGHT TECHNOLOGIE</h5>
+<p><strong>Juillet à Septembre 2021</strong></p>
+<p>Initiation Windows, Word, Excel, PowerPoint, Photoshop.</p>
 </div>
 
 </div>
 </section>
 
-<!-- COMPÉTENCES PERSONNELLES -->
+<!-- INFORMATIONS COMPLEMENTAIRES -->
 <section class="section">
-<div class="container">
-<h2 class="text-center highlight mb-5">Compétences Personnelles</h2>
-<div class="row text-center">
-<div class="col-md-4"><p>✔ Esprit d’analyse</p></div>
-<div class="col-md-4"><p>✔ Rigueur professionnelle</p></div>
-<div class="col-md-4"><p>✔ Travail en équipe</p></div>
-<div class="col-md-4"><p>✔ Sens de l’organisation</p></div>
-<div class="col-md-4"><p>✔ Communication efficace</p></div>
-<div class="col-md-4"><p>✔ Autonomie</p></div>
-</div>
+<div class="container text-center">
+<h2 class="highlight mb-4">Informations Complémentaires</h2>
+<p>Permis de conduire : Catégorie B</p>
+<p>Français : Courant | Anglais : Intermédiaire</p>
 </div>
 </section>
 
-<!-- LANGUES -->
-<section class="section bg-dark text-center">
+<!-- PROJECTS -->
+<section id="projects" class="section">
 <div class="container">
-<h2 class="highlight mb-4">Langues</h2>
-<p>Français : Courant</p>
-<p>Anglais : Intermédiaire</p>
+<h2 class="text-center highlight mb-5">Réalisations Techniques</h2>
+<p class="text-center">Projets en développement...</p>
 </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section text-center">
+<section id="contact" class="section bg-dark text-center">
 <div class="container">
 <h2 class="highlight mb-4">Contact</h2>
-
 <p>Email : akagodossouaudrey@gmail.com</p>
 <p>Téléphone : +229 01 62 61 63 86</p>
 <p>Localisation : Abomey-Calavi, Bénin</p>
-
-<form action="https://formspree.io/f/mlezprno" method="POST" class="mx-auto" style="max-width:500px;">
-<input type="text" name="name" class="form-control mb-3" placeholder="Votre nom" required>
-<input type="email" name="email" class="form-control mb-3" placeholder="Votre email" required>
-<textarea name="message" class="form-control mb-3" placeholder="Votre message" rows="4" required></textarea>
-<button type="submit" class="btn btn-custom">Envoyer</button>
-</form>
-
 </div>
 </section>
 
@@ -222,15 +268,15 @@ form button{ width:100%; }
 <script>
 AOS.init({duration:1000,once:true});
 var typed = new Typed('#typed', {
-  strings: [
-    "Développement Front-End",
-    "Applications Web Dynamiques",
-    "Solutions Numériques Innovantes",
-    "Architectures Web Performantes"
-  ],
-  typeSpeed: 50,
-  backSpeed: 30,
-  loop: true
+strings:[
+"Développement Front-End",
+"Applications Web Dynamiques",
+"Marketing Digital",
+"Sécurité Informatique"
+],
+typeSpeed:50,
+backSpeed:30,
+loop:true
 });
 </script>
 
